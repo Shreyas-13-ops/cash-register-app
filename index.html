@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
-    <title>Cash register app | Calculate your balance amout right here</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Cash register app | Calculate your balance amout</title>
   </head>
   <body>
     <main class="container">
@@ -26,33 +26,37 @@
           <label for="cash-given">Cash Given:</label>
           <input type="number" name="cash-given" id="cash-given" />
         </div>
-        <!-- Button -->
-        <button class="btn-check">Check</button>
-        <!-- Table -->
-        <table class="change-table">
-            <caption>Return Change:</caption>
-            <tr>
-                <th>No. of notes</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr class="change-table_note">
-                <th>Note</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>100</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
-            </tr>
-        </table>
       </div>
+      <!-- Button -->
+      <button id="btn-check">Check</button>
+      <!-- Message box -->
+      <p id="message-box"></p>
+      <!-- Table -->
+      <table class="change-table">
+        <caption>
+          Return Change:
+        </caption>
+        <tr>
+          <th>No. of notes</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="change-table_note">
+          <th>Note</th>
+          <td>2000</td>
+          <td>500</td>
+          <td>100</td>
+          <td>20</td>
+          <td>10</td>
+          <td>5</td>
+          <td>1</td>
+        </tr>
+      </table>
     </main>
     <script src="script/main.js"></script>
   </body>

@@ -11,8 +11,10 @@ main{
     flex-direction: column;
     width: 50vw;
 }
+.change-table{
+    height: 15vh;
+}
 .heading{
-    /* text-align: center; */
     padding-bottom: 1rem;
 }
 .description{
@@ -21,8 +23,11 @@ main{
 .form_bill, .form_cash{
     margin: 1rem;
 }
-.btn-check{
-    width: 20vw;
-    padding: 5px;
-    margin: 1rem;
+#btn-check{
+    /* width: 20vw; */
+    padding: 6px 5px;
+    margin: 1rem 1rem .5rem 1rem;
+}
+#message-box{
+    padding: 1rem 0;
 }
