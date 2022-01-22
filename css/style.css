@@ -1,33 +1,92 @@
+:root{
+    --ff-primary: "Lato", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --bg-primary: #174a55; 
+    --text-color: #ffffff;
+    --bg-btn: #c2f1ff;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
 }
-main{
-    margin: auto;
-    margin-top: 2rem;
+body{
+    font-family: var(--ff-primary), var(--ff-secondary);
+    line-height: 1.6;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 40vw;
+
+    color: var(--text-color);
 }
 .container{
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    background-color: var(--bg-primary);
+
+    padding: 3rem 3rem 2rem 3rem;
+    margin: 0 auto;
 }
-.change-table{
-    height: 15vh;
+input{
+    display: block;
+    width: 100%;
+    height: 5vh;
 }
-.heading{
+h1, p, .form_bill, .form_cash {
     padding-bottom: 1rem;
 }
-.description{
-    width: 20rem;
-}
 .form_bill, .form_cash{
-    margin: 1rem;
+    letter-spacing: 1px;
 }
-#btn-check{
-    /* width: 20vw; */
-    padding: 6px 5px;
-    margin: 1rem 1rem .5rem 1rem;
+.description{
+    padding-bottom: 1.5rem;
+    width: 100%;
+    margin: auto;
 }
-#message-box{
-    padding: 1rem 0;
+#cash-given, #bill-amount {
+    margin-top: .5rem;
+    font-size: 1.3rem;
+    padding: 1rem .5rem;
+}
+#btn-check {
+    margin: auto;
+    padding: .6rem 1rem;
+    font-size: 1rem;
+    border-radius: .2rem;
+    border: none;
+    background-color: var(--bg-btn);
+    color: var(--bg-primary);
+    font-weight: bold;
+}
+.change-table{
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    font-weight: bold;
+}
+caption{
+    margin-bottom: 1rem;
+}
+table, th, td{
+    border: 1px solid var(--bg-primary);
+}
+.change-table_count {
+    height: 50px;
+    background-color: #fff;
+
+}
+.change-table_note {
+    height: 40px;
+    background-color: var(--bg-btn);
+    color: var(--bg-primary);
+}
+th{
+    width: 12%;
+    text-align: center;
+    background-color: var(--bg-btn);
+    color: var(--bg-primary);
+}
+td{
+    width: 10%;
 }

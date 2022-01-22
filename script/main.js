@@ -20,6 +20,7 @@ checkBtn.addEventListener("click", function validateBillAndCashAmount() {
 });
 
 //Helper functions -
+
 function calculateChange(cashToBeReturned) {
   for (let i = 0; i < notes.length; i++) {
     let numberOfNotes = Math.trunc(cashToBeReturned / notes[i]);
